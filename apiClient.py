@@ -9,10 +9,10 @@ class ApiClient():
 
     def createParams(self, code, id, values):
         return {
-            'id': 1,
-            'code': code,
-            'value1': values[0],
-            'value2': values[1]
+            "id": id,
+            "code": code,
+            "value1": int(values[0]),
+            "value2": int(values[1])
         }
     
     def post(self, data):
